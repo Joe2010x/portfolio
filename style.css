@@ -192,12 +192,29 @@ header.sticky {
 }
 
 .services-content{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	display: flex;
+	/* grid-template-columns: repeat(auto-fit, minmax(300px, auto)); */
+    flex-direction: column;
 	align-items: center;
 	text-align: center;
 	gap: 2rem;
 	margin-top: 5rem;
+}
+.services-icon-wrap {
+    width: 200px;
+    height: 200px;
+}
+.services-icon {
+    width: 150px;
+    height: 150px;
+    object-fit:contain;
+}
+.service-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 .box{
 	padding: 45px;
