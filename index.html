@@ -19,13 +19,13 @@
     <box-icon name='universal-access'></box-icon>
 
     <header>
-        <a href="#" class="logo"><img src="#">logo</a>
+        <a href="#" class="logo"><img src="./img/dotnetlogo.png"></a>
         <div class="bx bx-menu" id = "menu-icon"></div>
 
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#service">Service</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
             <li><a href="#portfolio">My Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -34,13 +34,109 @@
         <div class="home-text">
             <h4>Hello</h4>
             <h1>I'm Joe</h1>
-            <h3>Full<span>stack</span> deve<span>loper</span></h3>
-            <a href="#" class="btn">Hire me</a>
+            <h3><span class="auto-type">
+            </span>
+        </h3>
+            <!-- <a href="#" class="btn">Hire me</a> -->
         </div>
         <img class="personal-photo" src="./img/photo-modified.png" alt="photo">
     </section>
 
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4>Hi, I am here to complete your next project</h4>
+            <p>My passion for learning, solving complex issues, and making products that people enjoy using, brought me to here. I’m energetic and proactive, and I enjoy working and collaborating with others!</p>
+            
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2>My Services</h2>
+            <h4>Better Design, Better Experiences</h4>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <img src="./img/serv1.png" >
+                <h3>Mobile App Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi, sed reiciendis adipisci deleniti nesciunt hic aliquam reprehenderit ad error quo quia, nisi excepturi rerum porro qui nihil fugit. Neque.</p>
+            </div>
+            <div class="box">
+                <img src="./img/serv2.png" >
+                <h3>Mobile App Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi, sed reiciendis adipisci deleniti nesciunt hic aliquam reprehenderit ad error quo quia, nisi excepturi rerum porro qui nihil fugit. Neque.</p>
+            </div>
+            <div class="box">
+                <img src="./img/serv3.png" >
+                <h3>Mobile App Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi, sed reiciendis adipisci deleniti nesciunt hic aliquam reprehenderit ad error quo quia, nisi excepturi rerum porro qui nihil fugit. Neque.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2>My Portfolio</h2>
+            <h4>Some Of My Projects</h4>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="./img/bingo.gif" alt="">
+                <div class="main-row">
+                    <div class="row-text">
+                        <h6>Bingo Game</h6>
+                    </div>
+                    <div class="row-icon">
+                            <i class="bx bx-heart"></i>
+                    </div>
+                </div>
+                <h3>React Game</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <h4>Lets work Together</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur est non commodi accusantium ad a veritatis dicta iure voluptatem, earum ab nulla sunt vel reprehenderit impedit? Alias, facere magni!</p>
+            <div class="contact-list">
+                <li><a href="#">Dongping Joe Sun</a></li>
+                <li><a href="#">dongping.sun@appliedtechnology.se</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bx-git-pull-request'></i></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Developed by Joe 2022</p>
+    </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings:['','JS Fullstack Developer', '.Net Fullstack Developer', "iOS Developer"],
+            typeSpeed: 50,
+            backSpeed:30,
+            loop:true
+        })
+    </script>
 </body>
 </html>
